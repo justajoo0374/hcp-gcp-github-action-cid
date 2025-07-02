@@ -22,4 +22,4 @@ jobs:
       name: 'gcloud'
       run: |-
         $gcloud config set account github-actions-sa@white-resolver-460502-v9.iam.gserviceaccount.com
-        gcloud services list
+        gcloud project list
