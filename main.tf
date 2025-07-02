@@ -2,7 +2,6 @@ resource "google_compute_instance" "examplse" {
     name = "test-pk-vm"
     zone = "us-central1-a"
     machine_type = "f1-micro"
-    labels = var.label
     boot_disk {
         initialize_params {
             image = "projects/debian-cloud/global/images/debian-12-bookworm-v20250610"
