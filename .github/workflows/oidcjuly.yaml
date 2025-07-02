@@ -21,4 +21,4 @@ jobs:
     - id: 'gcloud'
       name: 'gcloud'
       run: |-
-        gcloud project list
+        gcloud projects list
