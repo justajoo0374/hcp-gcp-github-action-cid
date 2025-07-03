@@ -16,13 +16,13 @@ jobs:
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
-    - name: auth to gcp
-      uses: google-github-actions/auth@v2.0.0
+    - id: auth
+      uses: google-github-actions/auth@v2
       with:
-        workload_identity_provider: 'projects/211464305662/locations/global/workloadIdentityPools/github-provider/providers/github-pool'
-        service_account: 'github-actions-sa@white-resolver-460502-v9.iam.gserviceaccount.com'     
+        workload_identity_provider: "projects/211464305662/locations/global/workloadIdentityPools/github-provider/providers/github-pool"
+        service_account: "github-actions-sa@white-resolver-460502-v9.iam.gserviceaccount.com"     
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
 
