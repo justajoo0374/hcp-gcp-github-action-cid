@@ -1,6 +1,6 @@
 terraform {
  backend "gcs" {
-   bucket  = "gitaction"
+   bucket  = "gitactions"
    prefix  = "tf/state"
  }
 }
