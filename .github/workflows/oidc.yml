@@ -25,13 +25,7 @@ jobs:
         service_account: "github-actions-sa@white-resolver-460502-v9.iam.gserviceaccount.com"     
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
-
-    - name: gcloud
-      run: gcloud projects list
       
-      
-
-
     - name: Terraform Init
       run: terraform init
 
