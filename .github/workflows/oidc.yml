@@ -27,7 +27,7 @@ jobs:
       uses: hashicorp/setup-terraform@v1
 
     - name: gcloud
-      run: gcloud config project list
+      run: gcloud projects list
       
       
 
